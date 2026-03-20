@@ -114,9 +114,7 @@ class AiTranslator(BaseTranslator):
                 {"role": "user", "content": text}
             ],
             options={
-                "temperature": 0,
-                "num_predict": 96,
-                "num_ctx": 2048
+                "temperature": 0
             }
         )
         return response["message"]["content"].strip()
